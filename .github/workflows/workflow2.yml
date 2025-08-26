@@ -1,0 +1,8 @@
+name: Workflow 2 - Lint Code
+on: issues
+jobs:
+  deploy:
+    runs-on: macos-latest
+    steps:
+      - name: Output Github context
+        run: echo "GitHub Context:"  "${{ toJSON(github) }}"
