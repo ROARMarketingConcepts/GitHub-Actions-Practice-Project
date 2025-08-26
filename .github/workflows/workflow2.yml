@@ -1,4 +1,4 @@
-name: Workflow 2 - Lint Code
+name: Workflow 2 - Output GitHub Context
 on: issues
 jobs:
   deploy:
