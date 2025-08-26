@@ -1,8 +1,8 @@
 name: Workflow 2 - Output GitHub Context
 on: issues
 jobs:
-  deploy:
+  output-github-context:
     runs-on: macos-latest
     steps:
       - name: Output Github context
-        run: echo "GitHub Context:"  "${{ toJSON(github) }}"
+        run: echo "GitHub Context:"  "${{ toJSON(github.event) }}"
